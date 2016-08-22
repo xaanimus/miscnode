@@ -77,7 +77,7 @@ function startScraping() {
 }
 
 //every 10 seconds
-startScraping();
+//startScraping();
 //setInterval(startScraping, 60000);
 
 const ONE_HOUR = 60 * 60 * 1000;
