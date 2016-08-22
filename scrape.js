@@ -78,9 +78,9 @@ function startScraping() {
 
 //every 10 seconds
 startScraping();
-setInterval(startScraping, 60000);
+//setInterval(startScraping, 60000);
 
 const ONE_HOUR = 60 * 60 * 1000;
-setInterval(sendUpdate, ONE_HOUR);
+//setInterval(sendUpdate, ONE_HOUR);
 
-console.log("scrape.js running");
+console.log("scrape.js inactive");
