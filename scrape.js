@@ -3,6 +3,8 @@ const scrape = require('scrapeit'),
       request = require('request'),
       exec = require('child_process').exec;
 
+const PHONE_NUMBER = process.env.PHONE_NUMBER_A;
+
 const webpageUrl = "https://classes.cornell.edu/browse/roster/FA16/class/ENGRD/2700";
 
 const labels = [
@@ -28,7 +30,7 @@ function sendmsg(msg) {
         {
             'content-type': 'application/x-www-form-urlencoded'
         },
-        form: { number: '2404609301', message: msg }
+        form: { number: PHONE_NUMBER, message: msg }
     };
     request(options, (err, res, body) => {
         if (err) {
